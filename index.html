@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="no-referrer" />
+    <title>Welcome To Alwi Hub Scripts</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" /></symbol>
+      <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" /></symbol>
+      <symbol id="i-discord" viewBox="0 0 24 24"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z" /></symbol>
+    </svg>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="nav-wrap">
+          <a class="logo" href="#home" aria-label="Alwi Hub home">
+            <img
+              class="logo-mark"
+              src="assets/logo.jpg"
+              alt="Alwi Hub logo"
+            />
+            <span>
+              <strong>ALWI HUB</strong>
+              <small>ROBLOX · LUAU · PYTHON</small>
+            </span>
+          </a>
+          <nav class="main-nav" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#scripts">Scripts</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#stack">Stack</a>
+            <a href="#faq">FAQ</a>
+            <button type="button" data-open-privacy>Privacy & Policy</button>
+          </nav>
+          <div class="header-actions">
+            <div class="header-socials">
+              <a class="s-github" href="https://github.com/Mainery-foxxie" target="_blank" rel="noreferrer" aria-label="GitHub" data-app-link="github"><svg class="ico" aria-hidden="true"><use href="#i-github" /></svg></a>
+              <a class="s-youtube" href="https://www.youtube.com/@synaiz" target="_blank" rel="noreferrer" aria-label="YouTube" data-app-link="youtube"><svg class="ico" aria-hidden="true"><use href="#i-youtube" /></svg></a>
+              <a class="s-discord" href="https://discord.gg/KPYspdpJvY" target="_blank" rel="noreferrer" aria-label="Discord" data-app-link="discord"><svg class="ico" aria-hidden="true"><use href="#i-discord" /></svg></a>
+            </div>
+            <a class="header-cta" href="https://discord.gg/KPYspdpJvY" target="_blank" rel="noreferrer" data-app-link="discord">
+              Join Discord <span class="arrow" aria-hidden="true"></span>
+            </a>
+          </div>
+          <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" id="home">
+          <div class="hero-grid" aria-hidden="true"></div>
+          <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+          <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+          <div class="page-wrap hero-layout">
+            <div class="hero-copy reveal">
+              <p class="eyebrow">PORTFOLIO · ALWI 2026</p>
+              <h1>
+                WELCOME TO ALWI HUB
+                <br />
+                <span>Scripts</span>
+              </h1>
+              <p class="hero-description">
+                I'm Alwi—a developer exploring Roblox Luau, Python automation, reverse engineering, and resilient
+                system design.
+              </p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="#scripts">
+                  Explore library <span class="arrow" aria-hidden="true"></span>
+                </a>
+                <a class="button button-secondary" href="https://github.com/Mainery-foxxie" target="_blank" rel="noreferrer">
+                  <svg class="ico" aria-hidden="true"><use href="#i-github" /></svg> View GitHub
+                </a>
+              </div>
+              <div class="hero-stats">
+                <div>
+                  <strong data-stat-games>0</strong>
+                  <span>Experiences indexed</span>
+                </div>
+                <div>
+                  <strong>2</strong>
+                  <span>Open projects</span>
+                </div>
+                <div>
+                  <strong>Free</strong>
+                  <span>No key needed</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="loader-card reveal">
+              <div class="loader-head">
+                <span>OUR LIBRARY</span>
+                <strong>Velocity X Loader</strong>
+              </div>
+              <pre class="loader-code"><code>loadstring(game:HttpGet("https://raw.githubusercontent.com/Mainery-foxxie/Main/refs/heads/main/Velocity%20X/Loader.lua"))()</code></pre>
+              <button class="button button-primary loader-copy" type="button" data-copy-loader>
+                Copy script <span class="arrow" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+          <div class="hero-marquee">
+            <div class="hero-marquee-track">
+              <div class="hero-marquee-group">
+                <span>LUAU DEVELOPMENT</span>
+                <i></i>
+                <span>PYTHON AUTOMATION</span>
+                <i></i>
+                <span>SYSTEM RESEARCH</span>
+                <i></i>
+                <span>ROBLOX EXPERIENCES</span>
+                <i></i>
+              </div>
+              <div class="hero-marquee-group" aria-hidden="true">
+                <span>LUAU DEVELOPMENT</span>
+                <i></i>
+                <span>PYTHON AUTOMATION</span>
+                <i></i>
+                <span>SYSTEM RESEARCH</span>
+                <i></i>
+                <span>ROBLOX EXPERIENCES</span>
+                <i></i>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="library-section reveal" id="scripts">
+          <div class="page-wrap">
+            <div class="section-heading section-heading-dark reveal">
+              <div>
+                <p class="eyebrow">EVENT & FREE ITEM INDEX</p>
+                <h2>Roblox game library.</h2>
+              </div>
+              <p>
+                Browse Roblox experiences from the research index. Names, genres, root-place links, and
+                artwork are resolved from Roblox's public game APIs.
+              </p>
+            </div>
+
+            <div class="library-tools">
+              <label class="search-box">
+                <span class="search-icon" aria-hidden="true"></span>
+                <span class="sr-only">Search games</span>
+                <input type="search" placeholder="Search by game, category, or universe ID" />
+              </label>
+              <span class="result-count">0 results</span>
+            </div>
+
+            <div class="category-row" aria-label="Game categories"></div>
+
+            <div class="game-grid"></div>
+            <div class="load-more-wrap" hidden></div>
+            <div class="empty-state" hidden>
+              <strong>00</strong>
+              <h3>No games found.</h3>
+              <button type="button" data-reset-filters>Reset filters</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="projects-section reveal" id="projects">
+          <div class="page-wrap">
+            <div class="section-heading section-heading-dark reveal">
+              <div>
+                <p class="eyebrow">FEATURED RESEARCH</p>
+                <h2>Projects from the lab.</h2>
+              </div>
+              <p>Experimental tools and research projects built to understand automation and complex code systems.</p>
+            </div>
+            <div class="project-grid">
+              <article class="project-card">
+                <a href="https://github.com/Mainery-foxxie/Auto-Quest-Discord" target="_blank" rel="noreferrer">
+                  <div class="project-image">
+                    <img src="assets/project-auto-quest.png" alt="Auto Quest terminal dashboard" />
+                    <span>01 / PYTHON AUTOMATION</span>
+                  </div>
+                  <div class="project-copy">
+                    <p class="eyebrow">OPEN SOURCE · PYTHON</p>
+                    <h3>Auto Quest Discord</h3>
+                    <p>
+                      A terminal-based automation experiment featuring scheduled scans, live status output, and a
+                      clean operator dashboard on discord quest open source.
+                    </p>
+                    <div class="tech-tags">
+                      <span class="tech-tag">Python</span>
+                      <span class="tech-tag">Discord API</span>
+                    </div>
+                    <span class="project-link">View repository <span class="arrow" aria-hidden="true"></span></span>
+                  </div>
+                </a>
+              </article>
+              <article class="project-card">
+                <div
+                  class="project-image compare-slider"
+                  data-compare
+                  role="slider"
+                  tabindex="0"
+                  aria-label="Drag to compare obfuscated and deobfuscated Luau code"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-valuenow="50"
+                >
+                  <img class="compare-after" src="assets/deobf-after.png" alt="Deobfuscated, readable Luau code" />
+                  <div class="compare-before-wrap">
+                    <img class="compare-before" src="assets/deobf-before.png" alt="Obfuscated Luau code before deobfuscation" />
+                  </div>
+                  <div class="compare-handle" aria-hidden="true"><span class="compare-handle-grip"></span></div>
+                  <div class="compare-tag compare-tag-before">BEFORE</div>
+                  <div class="compare-tag compare-tag-after">AFTER</div>
+                  <span class="compare-hint">DRAG TO COMPARE</span>
+                </div>
+                <a class="project-copy-link" href="https://github.com/Mainery-foxxie/bacon-deobfuscation" target="_blank" rel="noreferrer">
+                  <div class="project-copy">
+                    <p class="eyebrow">RESEARCH · LUAU / PYTHON</p>
+                    <h3>Luau Deobfuscation Research</h3>
+                    <p>
+                      A research project examining transformed Luau, control flow, and methods for restoring
+                      readable program structure.
+                    </p>
+                    <div class="tech-tags">
+                      <span class="tech-tag">Luau</span>
+                      <span class="tech-tag">Python</span>
+                    </div>
+                    <span class="project-link">View repository <span class="arrow" aria-hidden="true"></span></span>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="about-section reveal" id="about">
+          <div class="about-grid" aria-hidden="true"></div>
+          <div class="page-wrap about-layout">
+            <div class="about-title">
+              <p class="eyebrow">ABOUT ME</p>
+              <h2>
+                Hello, I'm
+                <br />
+                Alwi.
+              </h2>
+              <div class="identity-card about-identity">
+                <div class="identity-frame">
+                  <img
+                    src="https://avatars.githubusercontent.com/u/267380318?v=4"
+                    alt="Alwi profile"
+                    loading="lazy"
+                    referrerpolicy="no-referrer"
+                    data-fallback-img
+                  />
+                  <div class="identity-fallback" aria-hidden="true">A</div>
+                </div>
+                <div class="identity-meta">
+                  <span>ABOUT ME</span>
+                  <strong>ALWI / SYNAI Z</strong>
+                  <small>Luau · Python · Automation</small>
+                </div>
+              </div>
+              <div class="about-links">
+                <a href="https://github.com/Mainery-foxxie" target="_blank" rel="noreferrer">
+                  <svg class="ico" aria-hidden="true"><use href="#i-github" /></svg> GitHub <span class="arrow" aria-hidden="true"></span>
+                </a>
+                <a href="https://www.youtube.com/@synaiz" target="_blank" rel="noreferrer">
+                  <svg class="ico" aria-hidden="true"><use href="#i-youtube" /></svg> YouTube <span class="arrow" aria-hidden="true"></span>
+                </a>
+                <a class="about-cta" href="mailto:lestilehendsy@gmail.com" data-copy-email title="Copy business email">
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+                  Contribute <span class="arrow" aria-hidden="true"></span>
+                </a>
+              </div>
+            </div>
+            <div class="about-content reveal">
+              <p class="about-lead">
+                I am a passionate developer exploring Roblox Luau scripting, Python, and AI-driven automation.
+              </p>
+              <p>
+                My focus spans understanding algorithmic logic, building terminal-based automation tools, and
+                exploring software security dynamics. I thrive on experimental projects that push the limits of
+                automation, reverse engineering, and system-level thinking.
+              </p>
+              <div class="skill-list">
+                <article>
+                  <span>01</span>
+                  <div>
+                    <h3>Roblox Luau & System Logic</h3>
+                    <p>Custom game mechanics, state machines, and client-server network architecture.</p>
+                  </div>
+                </article>
+                <article>
+                  <span>02</span>
+                  <div>
+                    <h3>Reverse Engineering</h3>
+                    <p>Studying transformed code, bytecode patterns, control flow, and readable reconstruction.</p>
+                  </div>
+                </article>
+                <article>
+                  <span>03</span>
+                  <div>
+                    <h3>Python Automation & AI</h3>
+                    <p>CLI/TUI dashboards, computer vision experiments, and logic-focused automation.</p>
+                  </div>
+                </article>
+                <article>
+                  <span>04</span>
+                  <div>
+                    <h3>Defensive Security Research</h3>
+                    <p>Studying abuse patterns and detection frameworks to design more resilient systems.</p>
+                  </div>
+                </article>
+              </div>
+              <div class="credits">
+                <span>PROJECT CREDITS</span>
+                <strong>Alwi · Sinque</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="stack-section reveal" id="stack">
+          <div class="page-wrap">
+            <div class="section-heading section-heading-dark">
+              <div>
+                <p class="eyebrow">WHAT I USE</p>
+                <h2>Tools &amp; languages.</h2>
+              </div>
+              <p>The stack behind the scripts, the hub, and this portfolio itself.</p>
+            </div>
+            <div class="stack-groups">
+              <div class="stack-group">
+                <h3>Scripting &amp; Automation</h3>
+                <div class="stack-badges">
+                  <span class="stack-badge">Luau</span>
+                  <span class="stack-badge">Python</span>
+                  <span class="stack-badge">Discord API</span>
+                </div>
+              </div>
+              <div class="stack-group">
+                <h3>Frontend</h3>
+                <div class="stack-badges">
+                  <span class="stack-badge">HTML</span>
+                  <span class="stack-badge">CSS</span>
+                  <span class="stack-badge">JavaScript</span>
+                  <span class="stack-badge">Tailwind CSS</span>
+                </div>
+              </div>
+              <div class="stack-group">
+                <h3>Tools &amp; Platforms</h3>
+                <div class="stack-badges">
+                  <span class="stack-badge">Git / GitHub</span>
+                  <span class="stack-badge">VS Code</span>
+                  <span class="stack-badge">Roblox Studio</span>
+                  <span class="stack-badge">Roblox API</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="faq-section reveal" id="faq">
+          <div class="page-wrap">
+            <div class="faq-heading">
+              <div>
+                <p class="eyebrow">FREQUENTLY ASKED QUESTIONS</p>
+                <h2>Need answers?</h2>
+              </div>
+              <p>Quick answers for getting started with scripts on Roblox.</p>
+            </div>
+
+            <div class="faq-list">
+              <details>
+                <summary>Is Alwi Hub keyless?</summary>
+                <div class="faq-answer">
+                  <p>Yes. Alwi Hub is keyless, so there is no key system to get through. It is 100% free.</p>
+                </div>
+              </details>
+              <details>
+                <summary>Does Alwi Hub cost anything?</summary>
+                <div class="faq-answer">
+                  <p>No. Alwi Hub is free, with no fees, subscriptions, ads, or key to buy. Some executors and games have their own prices, so check before you pay anyone else.</p>
+                </div>
+              </details>
+              <details>
+                <summary>Is the script safe to use?</summary>
+                <div class="faq-answer">
+                  <p>Use it at your own risk. Scripts can stop working at times, for example after a Roblox or game update, so expect an occasional break until it is fixed.</p>
+                </div>
+              </details>
+              <details>
+                <summary>How do I use a script on Roblox?</summary>
+                <div class="faq-answer">
+                  <p>Copy a script from the library, open a Roblox game executor, paste the script, attach it to the game if required, and run it.</p>
+                  <a href="https://whatexploitsare.online/" target="_blank" rel="noreferrer">
+                    Find a Roblox executor <span class="arrow" aria-hidden="true"></span>
+                  </a>
+                </div>
+              </details>
+              <details>
+                <summary>What is a Roblox executor?</summary>
+                <div class="faq-answer">
+                  <p>A Roblox executor is third-party software used to run custom Luau code inside a Roblox game. Only download executors from sources you trust, and understand that unofficial tools may risk your account or device.</p>
+                </div>
+              </details>
+              <details>
+                <summary>Why is my script not working?</summary>
+                <div class="faq-answer">
+                  <p>Make sure your executor is attached correctly, the Roblox game is supported, and you are using an up-to-date script. Game updates can temporarily break scripts until they are fixed.</p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <section class="discord-section reveal">
+          <div class="discord-grid" aria-hidden="true"></div>
+          <div class="page-wrap discord-layout">
+            <div class="reveal">
+              <p class="eyebrow">COMMUNITY SUPPORT</p>
+              <h2>Need help or found a bug?</h2>
+              <p>Join the Discord community to report issues, follow project updates, and talk with other members.</p>
+              <div class="discord-actions">
+                <a class="button button-primary" href="https://discord.gg/KPYspdpJvY" target="_blank" rel="noreferrer">
+                  <svg class="ico" aria-hidden="true"><use href="#i-discord" /></svg> Join our Discord <span class="arrow" aria-hidden="true"></span>
+                </a>
+                <button class="button button-secondary" type="button" data-copy-discord>Copy invite</button>
+              </div>
+            </div>
+            <div class="community-card reveal">
+              <div class="community-head">
+                <span class="community-icon">SZ</span>
+                <div>
+                  <strong>Synai Z Community</strong>
+                  <small>discord.gg/KPYspdpJvY</small>
+                </div>
+              </div>
+              <div class="community-stats">
+                <div>
+                  <i class="online-dot"></i>
+                  <strong data-discord-online>—</strong>
+                  <span>Online</span>
+                </div>
+                <div>
+                  <i></i>
+                  <strong data-discord-offline>—</strong>
+                  <span>Offline</span>
+                </div>
+                <div>
+                  <i></i>
+                  <strong data-discord-members>—</strong>
+                  <span>Members</span>
+                </div>
+              </div>
+              <p data-discord-note>Live counts appear when Discord's public API is available.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="page-wrap footer-main">
+          <a class="logo" href="#home" aria-label="Alwi Hub home">
+            <img
+              class="logo-mark"
+              src="assets/logo.jpg"
+              alt="Alwi Hub logo"
+            />
+            <span>
+              <strong>ALWI HUB</strong>
+              <small>Smart guys like something to do</small>
+            </span>
+          </a>
+          <div class="footer-nav">
+            <a href="#home">Home</a>
+            <a href="#scripts">Scripts</a>
+            <a href="#projects">Projects</a>
+            <a href="#stack">Stack</a>
+            <a href="#faq">FAQ</a>
+            <button type="button" data-open-privacy>Privacy Policy</button>
+            <button type="button" data-open-terms>Terms of Service</button>
+            <button type="button" data-open-cookies>Cookie Policy</button>
+            <a class="footer-unsub" href="mailto:lestilehendsy@gmail.com?subject=Unsubscribe">Unsubscribe</a>
+          </div>
+          <div class="footer-socials">
+            <a class="s-github" href="https://github.com/Mainery-foxxie" target="_blank" rel="noreferrer" data-app-link="github"><svg class="ico" aria-hidden="true"><use href="#i-github" /></svg>GitHub</a>
+            <a class="s-youtube" href="https://www.youtube.com/@synaiz" target="_blank" rel="noreferrer" data-app-link="youtube"><svg class="ico" aria-hidden="true"><use href="#i-youtube" /></svg>YouTube</a>
+            <a class="s-discord" href="https://discord.gg/KPYspdpJvY" target="_blank" rel="noreferrer" data-app-link="discord"><svg class="ico" aria-hidden="true"><use href="#i-discord" /></svg>Discord</a>
+          </div>
+        </div>
+        <div class="page-wrap footer-bottom">
+          <span>© 2026 Synai Z</span>
+          <p>Scripts are for personal use only — use at your own risk.</p>
+          <span>Credits: Alwi · Sinque</span>
+        </div>
+      </footer>
+
+      <div class="cookie-banner" role="region" aria-label="Cookie notice" hidden>
+        <p>
+          <strong>No tracking cookies here.</strong> Alwi Hub does not set cookies or use analytics. We only save a
+          small setting on your device so this notice stays closed.
+        </p>
+        <div class="cookie-actions">
+          <button class="button button-primary" type="button" data-cookie-accept>Got it</button>
+          <button class="button button-secondary" type="button" data-open-cookies>Cookie policy</button>
+        </div>
+      </div>
+
+      <div class="policy-backdrop" role="presentation" hidden>
+        <section class="policy-panel" role="dialog" aria-modal="true" aria-labelledby="policy-title">
+          <button class="policy-close" type="button" aria-label="Close">
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="policy-tabs" role="tablist" aria-label="Legal">
+            <button type="button" role="tab" id="tab-privacy" aria-selected="true" aria-controls="panel-privacy" data-policy-tab="privacy">Privacy Policy</button>
+            <button type="button" role="tab" id="tab-terms" aria-selected="false" aria-controls="panel-terms" data-policy-tab="terms">Terms of Service</button>
+            <button type="button" role="tab" id="tab-cookies" aria-selected="false" aria-controls="panel-cookies" data-policy-tab="cookies">Cookie Policy</button>
+          </div>
+
+          <div role="tabpanel" id="panel-privacy" aria-labelledby="tab-privacy" data-policy-panel="privacy">
+            <h2 id="policy-title">What this site does with your data.</h2>
+            <p class="policy-updated">Last updated November 3, 2026</p>
+            <div class="policy-copy">
+              <article>
+                <span>01</span>
+                <div>
+                  <h3>What we collect</h3>
+                  <p>
+                    Nothing about you. Alwi Hub has no accounts, no sign-up forms, no cookies, and no analytics or advertising trackers. The only thing saved on your device is a small setting that remembers you closed the cookie notice.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span>02</span>
+                <div>
+                  <h3>Forms and search</h3>
+                  <p>
+                    Alwi Hub has no forms to fill in and asks for no personal details. The game search box filters the list on your device, and what you type is never sent anywhere.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span>03</span>
+                <div>
+                  <h3>Services your browser contacts</h3>
+                  <p>
+                    To show fonts, game names and player counts, thumbnails, and the profile picture, your browser requests data from Google Fonts, Roblox, and GitHub. Discord member counts load from Discord only once you scroll to the community section. Those services can see your IP address and device details under their own privacy policies, and this site asks your browser not to tell them which page you came from. GitHub, YouTube, and Discord only connect with you when you open their links.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span>04</span>
+                <div>
+                  <h3>Email</h3>
+                  <p>
+                    The Contribute button copies <a href="mailto:lestilehendsy@gmail.com">lestilehendsy@gmail.com</a> to your clipboard and sends nothing. If you write to us, we use your address and message only to reply, and we do not sell or share them.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span>05</span>
+                <div>
+                  <h3>Unsubscribe</h3>
+                  <p>
+                    Alwi Hub does not run a mailing list today. If you ever want to stop hearing from us by email, use the Unsubscribe link in the footer or write “Unsubscribe” to <a href="mailto:lestilehendsy@gmail.com?subject=Unsubscribe">lestilehendsy@gmail.com</a>.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span>06</span>
+                <div>
+                  <h3>Changes</h3>
+                  <p>
+                    When this policy changes, we update this page and the date above.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div role="tabpanel" id="panel-terms" aria-labelledby="tab-terms" data-policy-panel="terms" hidden>
+            <h2 id="terms-title">Using Alwi Hub.</h2>
+            <p class="policy-updated">Last updated November 3, 2026</p>
+            <div class="policy-copy">
+              <article>
+                <span>01</span>
+                <div>
+                  <h3>What this is</h3>
+                  <p>
+                    Alwi Hub is a free, keyless portfolio and script library shared for educational and personal use. By using the site or its scripts, you agree to these terms.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span>02</span>
+                <div>
+                  <h3>Cost</h3>
+                  <p>
+                    Alwi Hub is free to use. There are no fees, subscriptions, paid tiers, or in-site purchases, and there are no ads on this site. Tools you choose to use with the scripts, such as an executor, and the games themselves may have their own prices that Alwi Hub does not control. Check them before you pay anyone.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span>03</span>
+                <div>
+                  <h3>Use at your own risk</h3>
+                  <p>
+                    Scripts are provided as they are, with no warranty. They can stop working at any time, for example after a Roblox or game update. Running scripts through third-party executors can put your Roblox account or device at risk, and you accept that risk.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span>04</span>
+                <div>
+                  <h3>Follow the rules</h3>
+                  <p>
+                    You are responsible for following Roblox's Terms of Use and the rules of any game you play. Do not use Alwi Hub to harm other people or break the law.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span>05</span>
+                <div>
+                  <h3>Trademarks and affiliation</h3>
+                  <p>
+                    Roblox, Discord, YouTube, and GitHub names and logos belong to their owners. Alwi Hub is not affiliated with or endorsed by any of them.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span>06</span>
+                <div>
+                  <h3>Image credits and licensing</h3>
+                  <p>
+                    Game names and thumbnails come from Roblox's public APIs and belong to their creators. They are shown only to identify each experience. The logo, project screenshots, and profile picture are the site owner's own, and no licensed stock images are used. If you believe an image is used without permission, email <a href="mailto:lestilehendsy@gmail.com">lestilehendsy@gmail.com</a> and it will be credited or removed.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span>07</span>
+                <div>
+                  <h3>Changes</h3>
+                  <p>
+                    We may update these terms. The date above shows the latest version.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div role="tabpanel" id="panel-cookies" aria-labelledby="tab-cookies" data-policy-panel="cookies" hidden>
+            <h2 id="cookies-title">Cookies on Alwi Hub.</h2>
+            <p class="policy-updated">Last updated November 3, 2026</p>
+            <div class="policy-copy">
+              <article>
+                <span>01</span>
+                <div>
+                  <h3>What cookies are</h3>
+                  <p>
+                    Cookies are small files a website can save on your device. Sites use them to remember you, keep you
+                    signed in, or measure traffic.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span>02</span>
+                <div>
+                  <h3>Cookies we use</h3>
+                  <p>None. Alwi Hub does not set cookies, and it has no accounts, analytics, or advertising.</p>
+                </div>
+              </article>
+              <article>
+                <span>03</span>
+                <div>
+                  <h3>What we save instead</h3>
+                  <p>
+                    When you close the cookie notice, your browser keeps one small setting (local storage, not a
+                    cookie) so the notice does not come back. It holds no personal information and stays until you
+                    clear this site's data.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span>04</span>
+                <div>
+                  <h3>Other websites</h3>
+                  <p>
+                    Fonts, game thumbnails, the profile picture, and Discord counts load from Google Fonts, Roblox,
+                    GitHub, and Discord. GitHub, YouTube, and Discord may also set their own cookies once you open
+                    their links. Those sites handle cookies under their own policies.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span>05</span>
+                <div>
+                  <h3>Your choices</h3>
+                  <p>
+                    You can block or delete cookies and site data in your browser settings. Clearing this site's data
+                    shows the notice again. Questions? Email
+                    <a href="mailto:lestilehendsy@gmail.com">lestilehendsy@gmail.com</a>.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/games-data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
